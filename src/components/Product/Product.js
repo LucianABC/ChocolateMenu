@@ -18,7 +18,7 @@ const Product = props => {
             <div>{props.tipo} {tieneLeche}, {props.porcentaje} cacao. {props.extras}</div>
           </td>
           <td className="product-list-item-price">
-            {props.precio}
+            ${props.precio}
           </td>
           <td className="product-list-item-delete">
               x

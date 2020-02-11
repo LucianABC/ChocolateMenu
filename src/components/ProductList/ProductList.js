@@ -24,6 +24,10 @@ let list = [
 ];
 
 const ProductList = ({product}) => {
+
+    //product.id=list.length;
+    //list.push(product);
+    
     return(
         <table className="product-list">
            <thead className="product-list-head">

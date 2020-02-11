@@ -5,7 +5,7 @@ import Actions from './components/Actions/Actions';
 
 function App() {
 
-  const [product, setProduct] = useState({});
+  const [product, setProduct] = useState();
   console.log(product);
   return (
     <div className="All">

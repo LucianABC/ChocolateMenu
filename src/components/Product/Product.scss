@@ -1,18 +1,30 @@
 .product-list-item {
-    height: 60px;
-    .product-list-item-id {
+    text-align: center;
+    height: 70px;
+    &:nth-child(odd){
+        background-color: #f0d2ff61;
+    }
+    td {
+        padding: 10px;
+    }
 
+
+    .product-list-item-id {
+        
+        font-weight: bold;
     }
 
     .product-list-item-info {
+        text-align: left;
+        font-size: 14px;
         h3{
             margin: 0;
         }
     }
     .product-list-item-price {
-        text-align: center;
+
     }
     .product-list-item-delete {
-        text-align: center;
+        
     }
 }

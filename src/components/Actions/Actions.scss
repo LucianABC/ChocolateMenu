@@ -17,7 +17,7 @@
                 display: flex;
                 flex-direction: column;
                 font-family: 'Pacifico', cursive;
-                margin: 10px;
+                margin: 6px;
                 box-sizing: border-box;
                 input {
                     height: 20px; 
@@ -42,21 +42,35 @@
             select {
                 height: 26px;
             }
-            
+        }
+        .precio-label {
+            width: 15%;
         }
         
     }
 
     .add-button {
-        background-color: #7a2a07;
-        box-shadow: inset 0px 0px 5px 5px rgba(84,25,0,1);
-        border: #541900;
-        border-radius: 2px;
+        align-self: center;
+        background-color: #41085e;
+        box-shadow: inset -1px -1px 4px 4px #855c9ac9;
+                //border: #541900;ox-shadow: 
+        border: none;
+        border-radius: 50%;
         color: #fdfdfd;
-        font-size: 22px;
-        font-weight: lighter;
-        text-shadow: 4px 2px 2px #441400;
-        height: 35px;
+        cursor: pointer;
+        font-family: 'Pacifico', cursive;
+        font-size: 18px;
+        font-weight: 100;
+      //  text-shadow: 4px 2px 2px #441400;
+        height: 90px;
+        width: 90px;
+        &:hover {     
+            box-shadow: none;
+       }
+        &:active {
+            box-shadow:inset 1px 0px 4px 4px #29013e;
+
+        }
     }
 
 }
