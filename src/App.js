@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './App.scss';
+import ProductList from './components/ProductList/ProductList';
+import Actions from './components/Actions/Actions';
 
 function App() {
+
+  const [product, setProduct] = useState({});
+  console.log(product);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="All">
+      <ProductList product={product}></ProductList>
+      <Actions  setProduct={setProduct}></Actions>
     </div>
   );
 }

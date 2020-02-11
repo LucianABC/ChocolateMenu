@@ -1,0 +1,62 @@
+.actions {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px;
+    width: 100%;
+    .actions-inputs {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        div {
+            display: flex;
+            width: 100%;
+            label {
+                color: gray;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Pacifico', cursive;
+                margin: 10px;
+                box-sizing: border-box;
+                input {
+                    height: 20px; 
+                    width: 100%;
+                }
+            }
+        }
+
+        .marca-label {
+            width:50%;
+        }
+        .tipo-label {
+            width: 40%;
+        }
+        .extras-label {
+            width: 90%;
+        }
+        .porcentaje-label {
+            width: 15%;
+        }
+        .leche-label {
+            select {
+                height: 26px;
+            }
+            
+        }
+        
+    }
+
+    .add-button {
+        background-color: #7a2a07;
+        box-shadow: inset 0px 0px 5px 5px rgba(84,25,0,1);
+        border: #541900;
+        border-radius: 2px;
+        color: #fdfdfd;
+        font-size: 22px;
+        font-weight: lighter;
+        text-shadow: 4px 2px 2px #441400;
+        height: 35px;
+    }
+
+}
