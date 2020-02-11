@@ -1,9 +1,14 @@
 .actions {
+    
+    background-color: #e0d2ff61;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 15px 0px #d1c9ffd6;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 30px;
+    padding: 20px;
     width: 100%;
     .actions-inputs {
         display: flex;
