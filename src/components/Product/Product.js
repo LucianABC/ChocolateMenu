@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.scss';
 let tieneLeche;
 
-const Product = props => {
+const Product = (props) => {
     if(props.leche) {
       tieneLeche= "con leche"
       }else {
@@ -22,7 +22,7 @@ const Product = props => {
             ${props.precio}
           </td>
           <td className="product-list-item-delete">
-            <i className="fa fa-pencil" onClick={editProduct}></i>
+            <i className="fa fa-pencil" onClick={e=>{props.setEditedProduct(props.id)}}></i>
           </td>
         </tr>
     )

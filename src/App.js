@@ -6,22 +6,21 @@ import Actions from './components/Actions/Actions';
 function App() {
   const [product, setProduct] = useState();
   const [productList, setProductList] = useState([]);
-  
+  const [editedProduct, setEditedProduct] = useState();
+  console.log(editedProduct);
   useEffect(() => {
     if(product == null) return;  
     const clon = [...productList];
 
-    if (product.id == null){
     clon.push({id: clon.length, ...product});
-    } else {
-      clon.push(product);
-    }
+
     setProductList(clon);
   }, [product])
 
   return (
     <div className="All">
-      <ProductList productList={productList}></ProductList>
+      <ProductList productList={productList}
+                   setEditedProduct={setEditedProduct}></ProductList>
       <Actions  setProduct={setProduct} ></Actions>
     </div>
   );

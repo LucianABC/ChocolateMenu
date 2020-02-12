@@ -3,7 +3,7 @@ import './ProductList.scss';
 import Product from '../Product/Product';
 
 
-const ProductList = ({productList}) => {
+const ProductList = ({productList, setEditedProduct}) => {
 
     return(
         <table className="product-list">
@@ -21,6 +21,7 @@ const ProductList = ({productList}) => {
                         return(
                             <Product
                                 key={chocolate.id}
+                                setEditedProduct={setEditedProduct}
                                 id={chocolate.id}
                                 marca={chocolate.marca}
                                 porcentaje={chocolate.porcentaje}
@@ -28,6 +29,7 @@ const ProductList = ({productList}) => {
                                 tipo={chocolate.tipo}
                                 extras={chocolate.extras}
                                 precio={chocolate.precio}>
+                                
                             </Product>
                         )
                     })
