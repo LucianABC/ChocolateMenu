@@ -4,10 +4,11 @@ let tieneLeche;
 
 const Product = props => {
     if(props.leche) {
-        tieneLeche= "con leche"
-        }else {
-            tieneLeche = "sin leche"
-        }
+      tieneLeche= "con leche"
+      }else {
+        tieneLeche = "sin leche"
+    }
+
     return(
         <tr className="product-list-item"> 
           <td className="product-list-item-id">
@@ -21,7 +22,7 @@ const Product = props => {
             ${props.precio}
           </td>
           <td className="product-list-item-delete">
-              x
+            <i className="fa fa-pencil" onClick={editProduct}></i>
           </td>
         </tr>
     )

@@ -5,12 +5,11 @@ const Actions = ({setProduct}) => {
     const [newmarca, setMarca] = useState("");
     const [newtipo, setTipo] = useState("");
     const [newporcentaje, setPorcentaje] = useState();
-    const [newleche, setLeche] = useState("");
+    const [newleche, setLeche] = useState();
     const [newextras, setExtras] = useState("");
-    const [newprecio, setPrecio] = useState("");
+    const [newprecio, setPrecio] = useState();
    
     const handleClick = event=>{
-        
         let newProduct = {
             marca: newmarca,
             tipo: newtipo,
@@ -21,6 +20,7 @@ const Actions = ({setProduct}) => {
         }
         setProduct(newProduct);
     };
+
     return (
         <form className="actions">
            <div className="actions-inputs">
@@ -58,7 +58,7 @@ const Actions = ({setProduct}) => {
                     </label>
                 </div>
            </div>
-            <button type="button" className="add-button" onClick ={handleClick}>Add new</button>
+            <button type="button" className="add-button" onClick={handleClick}>Add</button>
         </form>
     )
 }

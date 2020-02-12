@@ -2,32 +2,9 @@ import React from 'react';
 import './ProductList.scss';
 import Product from '../Product/Product';
 
-let list = [
-    {
-        id: 1,
-        marca: "Dolca",
-        tipo: "en rama",
-        porcentaje: "50%",
-        leche: false,
-        extras: [],
-        precio: 180
-    },
-    {   
-        id: 2,
-        marca: "Felfort",
-        tipo: "aireado",
-        porcentaje: "10%",
-        leche: true,
-        extras: ["almendras"],
-        precio: 150
-    },
-];
 
-const ProductList = ({product}) => {
+const ProductList = ({productList}) => {
 
-    //product.id=list.length;
-    //list.push(product);
-    
     return(
         <table className="product-list">
            <thead className="product-list-head">
@@ -40,9 +17,10 @@ const ProductList = ({product}) => {
            </thead>
            <tbody className="product-list-body">
                 {
-                    list.map(chocolate => {
+                    productList.map(chocolate => {
                         return(
                             <Product
+                                key={chocolate.id}
                                 id={chocolate.id}
                                 marca={chocolate.marca}
                                 porcentaje={chocolate.porcentaje}
@@ -55,7 +33,6 @@ const ProductList = ({product}) => {
                     })
                 }
             </tbody>
-
         </table>    
     )
 }

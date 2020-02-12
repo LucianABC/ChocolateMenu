@@ -8,7 +8,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: 30px;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
     .actions-inputs {
         display: flex;
@@ -50,15 +50,13 @@
         }
         .precio-label {
             width: 15%;
-        }
-        
+        }  
     }
 
     .add-button {
         align-self: center;
         background-color: #41085e;
         box-shadow: inset -1px -1px 4px 4px #855c9ac9;
-                //border: #541900;ox-shadow: 
         border: none;
         border-radius: 50%;
         color: #fdfdfd;
@@ -66,15 +64,13 @@
         font-family: 'Pacifico', cursive;
         font-size: 18px;
         font-weight: 100;
-      //  text-shadow: 4px 2px 2px #441400;
         height: 90px;
         width: 90px;
         &:hover {     
             box-shadow: none;
        }
         &:active {
-            box-shadow:inset 1px 0px 4px 4px #29013e;
-
+            box-shadow: inset -1px -1px 9px 7px #160121;
         }
     }
 
