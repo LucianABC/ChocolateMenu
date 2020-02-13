@@ -12,9 +12,11 @@ function App() {
   useEffect(() => {
     if(product == null) return;  
     const clon = [...productList];
-
-    clon.push({id: clon.length, ...product});
-
+    if (product.id==undefined ){   
+      clon.push({id: clon.length, ...product});
+    }else {
+      clon[product.id]=product;
+    }
     setProductList(clon);
   }, [product]);
 

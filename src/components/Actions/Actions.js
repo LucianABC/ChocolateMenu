@@ -9,18 +9,16 @@ const Actions = ({setProduct, prodToEdit}) => {
     const [newextras, setExtras] = useState("");
     const [newprecio, setPrecio] = useState();
 
-    useEffect(() => {
-        if (prodToEdit !== undefined) {
-            setMarca(prodToEdit.marca);
-            setTipo(prodToEdit.tipo);         
-            setPorcentaje(prodToEdit.porcentaje);
-            setLeche(prodToEdit.leche);
-            setExtras(prodToEdit.extras);
-            setPrecio(prodToEdit.precio);
-        }
-    },[prodToEdit])
+    const handleInputs = (marca="", tipo="", porcentaje=0, leche=true, extras="", precio=0) =>{
+        setMarca(marca);
+        setTipo(tipo);         
+        setPorcentaje(porcentaje);
+        setLeche(leche);
+        setExtras(extras);
+        setPrecio(precio);
+    }
     const handleClick = event=>{
-        let newProduct = {
+        let product = {
             marca: newmarca,
             tipo: newtipo,
             porcentaje: newporcentaje,
@@ -28,8 +26,21 @@ const Actions = ({setProduct, prodToEdit}) => {
             extras: newextras,
             precio: newprecio
         }
-        setProduct(newProduct);    
+        if (prodToEdit !==undefined) {
+            product.id=prodToEdit.id;
+        }
+        setProduct(product);   
+        handleInputs(); 
     };
+    
+    useEffect(() => {
+        if (prodToEdit !== undefined) {
+            handleInputs(prodToEdit.marca,prodToEdit.tipo,
+                prodToEdit.porcentaje,prodToEdit.leche,
+                prodToEdit.extras, prodToEdit.precio)
+        }
+    },[prodToEdit]);
+
     return (
         <form className="actions">
            <div className="actions-inputs">
