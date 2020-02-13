@@ -16,6 +16,7 @@ function App() {
       clon.push({id: clon.length, ...product});
     }else {
       clon[product.id]=product;
+      setId(undefined);
     }
     setProductList(clon);
   }, [product]);
