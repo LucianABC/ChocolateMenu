@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 15px;
     width: 100%;
-
     tr {
         padding: 10px;
         width: 100%;
@@ -13,14 +12,14 @@
         text-align: left;
         tr{
             font-family: 'Pacifico', cursive;
-            
             color: gray;
             th{
                 color: #6c2192;
                 font-weight: lighter;
-            font-size:18px;
+                font-size:18px;
                 padding: 10px;
                 padding-bottom: 3px;
+                text-shadow: 0.5px 0.5px #d09aec;
             }
         }
     }

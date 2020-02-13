@@ -25,10 +25,18 @@
 
     }
     .product-list-item-delete {
+        .fa{
+            margin: 4px;
+        }
         .fa-pencil {
-            color: #00c4ad;
+            color: orange;
             cursor: pointer;
             font-size: 23px;
+        }
+        .fa-trash{
+            color: orangered;
+            cursor:pointer;
+            font-size:23px;
         }
     }
 }

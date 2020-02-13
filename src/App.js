@@ -23,7 +23,6 @@ function App() {
 
   useEffect(()=>{
     let productToEdit = productList[id];
-    console.log(productToEdit);
     setProdToEdit(productToEdit);
   }, [id]);
 

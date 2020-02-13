@@ -23,6 +23,8 @@ const Product = (props) => {
           </td>
           <td className="product-list-item-delete">
             <i className="fa fa-pencil" onClick={e=>{props.setId(props.id)}}></i>
+            <i className="fa fa-trash" aria-hidden="true"></i>
+
           </td>
         </tr>
     )

@@ -12,7 +12,7 @@ const ProductList = ({productList, setId}) => {
                    <th>Id</th>
                    <th>Producto</th>
                    <th>Precio</th>
-                    <th>Eliminar</th>
+                    <th>Editar</th>
                </tr>
            </thead>
            <tbody className="product-list-body">
