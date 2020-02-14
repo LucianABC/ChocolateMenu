@@ -12,8 +12,7 @@ const Imagen = (props) => {
                     className="gt-button"
                     onClick={toggleValue}>
                         Click here!</button>
-            
-            <img src={GoldenTicket} className="gt-img"></img>
+            {bool? <img src={GoldenTicket} className="gt-img"/>:null}
         </div>
     )
 }
