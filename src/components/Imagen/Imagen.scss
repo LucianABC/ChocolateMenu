@@ -1,0 +1,14 @@
+.gt-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .gt-button {
+        background: goldenrod;
+        border: none;
+        color:white;
+        cursor: pointer;
+        font-family: 'Pacifico', cursive;
+        height: 50px;
+        width:150px;
+    }
+}

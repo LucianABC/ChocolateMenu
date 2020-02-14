@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 import ProductList from './components/ProductList/ProductList';
 import Actions from './components/Actions/Actions';
+import Imagen from './components/Imagen/Imagen';
 
 function App() {
   const [product, setProduct] = useState();
@@ -32,6 +33,7 @@ function App() {
                    setId={setId}></ProductList>
       <Actions  setProduct={setProduct}   
                 prodToEdit={prodToEdit} ></Actions>
+      <Imagen></Imagen>
     </div>
   );
 }
