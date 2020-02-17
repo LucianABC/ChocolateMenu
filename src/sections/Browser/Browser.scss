@@ -1,0 +1,10 @@
+.browser {
+    display: flex;
+   flex-direction: column;
+   .browser-menu {
+        display: inline-block;
+    .menu-item{
+        margin: 5px;
+    }
+   }
+}
