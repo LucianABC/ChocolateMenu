@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 const useBool = (boolValue) => {
     const [bool, setBool] = useState(boolValue);
@@ -10,7 +10,6 @@ const useBool = (boolValue) => {
         }
 
     }
-    console.log(bool)
     return [bool,toggleValue]
 }
 

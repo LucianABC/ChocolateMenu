@@ -1,0 +1,14 @@
+.brands-section {
+    align-items: centers;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    .content{
+        align-items: centers;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

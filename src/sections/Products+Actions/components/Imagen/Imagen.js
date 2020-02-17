@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Imagen.scss'
 import GoldenTicket from  './goldenticket.jpg';
 import useBool from '../useBoolean';
 
-const Imagen = (props) => {
+const Imagen = () => {
     const [bool, toggleValue] = useBool(false);
 
     return(
@@ -12,7 +12,7 @@ const Imagen = (props) => {
                     className="gt-button"
                     onClick={toggleValue}>
                         Click here!</button>
-            {bool? <img src={GoldenTicket} className="gt-img"/>:null}
+            {bool? <img src={GoldenTicket} alt="imagen" className="gt-img"/>:null}
         </div>
     )
 }
