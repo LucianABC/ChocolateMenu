@@ -1,4 +1,7 @@
-Actividad sugerida en ADA Front End Bootcamp para poner en práctica diferentes conceptos de React
+Conjunto de actividades sugerida en ADA Front End Bootcamp para poner en práctica diferentes conceptos de React.
+
+
+PROYECTO NO TERMINADO 
 
 -.-.-.-.-.-..-.-.-.-.-.-.-.-.
 

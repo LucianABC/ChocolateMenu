@@ -21,8 +21,8 @@ const Browser = () => {
             route: "/brands"
         },
         {   section: Params,
-            name:"Params",
-            route: "/params"
+            name:"Log In",
+            route: "/log-in"
         }
     ];
     
