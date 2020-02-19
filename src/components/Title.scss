@@ -1,9 +1,15 @@
 .title {
     align-items: center;
+    color:#25dfe8;
     display: flex;
     font-family: 'Pacifico', cursive;
-    font-size: 24px;
+
     justify-content: center;
     width: 100%;
+    h1 {
+        font-size: 32px;
+        
+    text-shadow: 3px 3px 0px #027e84;
+    }
 
 }

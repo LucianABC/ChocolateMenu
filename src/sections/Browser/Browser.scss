@@ -1,10 +1,24 @@
 .browser {
     display: flex;
    flex-direction: column;
+   font-family: 'Pacifico', cursive;
+   width: 100%;
    .browser-menu {
-        display: inline-block;
+        display: flex;
+        width: 100%;
+        justify-content: center;
     .menu-item{
+        color: #bd5532;
+        text-shadow: 1px -1px #431505;
+        background-color: #69311d;
+        border: 2px outset #bd5532;
+        box-shadow: inset 1px 1px 4px 4px #b24e2bdb;
         margin: 5px;
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 3px;
+        width: 100px;
+        text-align: center;
     }
    }
 }

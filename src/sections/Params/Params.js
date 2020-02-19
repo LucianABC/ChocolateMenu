@@ -1,4 +1,5 @@
 import React, {useReducer, useState} from 'react';
+import Imagen from './Imagen/Imagen'
 import Title from '../../components/Title'
 
 
@@ -38,6 +39,9 @@ const Params = () => {
             </div>
             
             <span> Hola {state.name}, tu usuario es {state.user} mail es {state.mail}</span>
+        
+            <Imagen></Imagen>
+
         </div>       
     );
 }
